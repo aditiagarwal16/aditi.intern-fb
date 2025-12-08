@@ -11,6 +11,7 @@ test("shows API message", async () => {
 
   render(<FetchMessage />);
 
-  const textEl = await waitFor(() => screen.getByTestId("msg"));
-  expect(textEl.textContent).toBe("Hello from mock");
+  const textElement = await waitFor(() => screen.getByTestId("msg"));
+
+  expect(textElement.textContent).toBe("Hello from mock");
 });

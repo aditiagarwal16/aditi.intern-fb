@@ -7,8 +7,8 @@ function FetchMessage() {
   useEffect(() => {
     async function load() {
       try {
-        const res = await axios.get("/api/message");
-        setMessage(res.data.message);
+        const response = await axios.get("/api/message");
+        setMessage(response.data.message);
       } catch (err) {
         setMessage("Failed to load");
       }
@@ -21,4 +21,3 @@ function FetchMessage() {
 }
 
 export default FetchMessage;
-
