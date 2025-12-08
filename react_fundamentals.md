@@ -7,3 +7,13 @@ Another small challenge was remembering that npm start only works inside the Rea
 After linking Tailwind with the index.css file and adding the correct content paths in tailwind.config.js, everything worked. I tested Tailwind by adding a simple heading with classes like text-3xl font-bold text-blue-600, and seeing it render properly confirmed the setup was correct.
 
 Overall, the setup helped me understand how Tailwind integrates into a React workflow, how PostCSS works behind the scenes, and how to troubleshoot version-related issues. This was a useful experience because I’ll be using React + Tailwind in many future tasks.
+
+
+
+Reflection – Styling with Tailwind CSS
+
+Using Tailwind CSS made it much easier to style the Counter and Button components. I liked that I didn’t need to switch between multiple CSS files; instead, I could apply utility classes directly inside the JSX. It made the styling process faster and more visual because I could see changes instantly.
+
+One of the biggest advantages of Tailwind is how consistent everything becomes. The spacing, colors, and font sizes follow a system, so the UI looks more organised without me needing to manually define styles. I also found hover and active states very simple to add with Tailwind utility classes.
+
+At the same time, Tailwind can become a bit overwhelming because the class names get long and messy if not written carefully. Another potential pitfall is relying too much on inline utility classes, which can make components harder to scan if the styling grows too big. But overall, the experience was smooth, and it felt much faster than writing traditional CSS.
