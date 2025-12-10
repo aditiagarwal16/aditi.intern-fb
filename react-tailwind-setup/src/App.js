@@ -11,16 +11,28 @@
 // export default App;
 
 
+// import React from "react";
+// import Message from "./components/Message";
+
+// function App() {
+//   return (
+//     <div className="h-screen flex items-center justify-center">
+//       <Message />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
 import React from "react";
-import Message from "./components/Message";
+import UseCallbackDemo from "./UseCallbackDemo";
 
 function App() {
-  return (
-    <div className="h-screen flex items-center justify-center">
-      <Message />
-    </div>
-  );
+  return <UseCallbackDemo />;
 }
 
 export default App;
-
