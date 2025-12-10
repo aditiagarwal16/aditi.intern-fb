@@ -35,3 +35,14 @@ React Testing Library focuses on how users actually interact with the UI rather 
 
 2. What challenges did you encounter when simulating user interaction?
 The main challenge was understanding how to properly use userEvent and asynchronous functions like waitFor. Another challenge was making sure the testing environment (setupTests.js) was configured correctly so Jest could understand JSX and DOM APIs. But once everything was set up, writing tests felt straightforward.
+
+
+
+Introduction to Unit Testing – Reflection
+
+1. Why is automated testing important in software development?
+Automated testing ensures that code continues to work as expected even after new features are added or existing code is changed. It prevents regressions, increases confidence during development, and saves time because tests can run quickly and consistently without needing manual checks. For applications like Focus Bear, which evolve constantly, automated tests help maintain long-term reliability.
+
+2. What did you find challenging when writing your first Jest test?
+The main challenge was understanding how Jest structures tests and how assertions work.
+Once I learned the basic pattern (arrange → act → assert) and understood how to run tests using Jest’s CLI, things became much easier. Writing tests for small utility functions turned out to be simpler than expected.
