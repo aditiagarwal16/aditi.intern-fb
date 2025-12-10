@@ -25,3 +25,13 @@ React component tests, however, involve:
 - Checking what appears on the screen  
 
 Component tests simulate user behavior, while Redux tests simulate application logic.
+
+
+Reflection – Testing React Components
+
+1. What are the benefits of using React Testing Library instead of testing implementation
+details?
+React Testing Library focuses on how users actually interact with the UI rather than the internal code structure. This makes tests more reliable, less fragile, and easier to maintain because UI changes don’t break tests unnecessarily.
+
+2. What challenges did you encounter when simulating user interaction?
+The main challenge was understanding how to properly use userEvent and asynchronous functions like waitFor. Another challenge was making sure the testing environment (setupTests.js) was configured correctly so Jest could understand JSX and DOM APIs. But once everything was set up, writing tests felt straightforward.
