@@ -17,3 +17,14 @@ Using Tailwind CSS made it much easier to style the Counter and Button component
 One of the biggest advantages of Tailwind is how consistent everything becomes. The spacing, colors, and font sizes follow a system, so the UI looks more organised without me needing to manually define styles. I also found hover and active states very simple to add with Tailwind utility classes.
 
 At the same time, Tailwind can become a bit overwhelming because the class names get long and messy if not written carefully. Another potential pitfall is relying too much on inline utility classes, which can make components harder to scan if the styling grows too big. But overall, the experience was smooth, and it felt much faster than writing traditional CSS.
+
+
+
+
+
+
+Selectors help extract specific pieces of state from the Redux store in a clean and reusable way. Instead of directly accessing nested state inside components, selectors provide a single source of truth that reduces duplication and improves maintainability.
+
+The biggest benefit is that if the structure of the state changes later, only the selector needs to be updated — not every component. Selectors also make components simpler and more readable. They are especially useful when multiple components depend on the same piece of state or when the selected value requires computation.
+
+Using selectors also helps performance, because memoized selectors avoid recalculating values unnecessarily. Overall, selectors make Redux code more scalable, maintainable, and easier to understand.
