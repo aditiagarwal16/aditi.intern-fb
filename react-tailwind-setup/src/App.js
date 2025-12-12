@@ -58,12 +58,26 @@
 
 
 
-import UseMemoDemo from "./components/UseMemoDemo";
+// import UseMemoDemo from "./components/UseMemoDemo";
+
+// function App() {
+//   return (
+//     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+//       <UseMemoDemo />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+import UseEffectDemo from "./components/UseEffectDemo";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <UseMemoDemo />
+      <UseEffectDemo />
     </div>
   );
 }

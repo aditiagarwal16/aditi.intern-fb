@@ -29,3 +29,24 @@ You should avoid using useMemo for simple calculations because it adds overhead.
 # What happens if you remove useMemo from your implementation?
 
 Without useMemo, the expensive calculation runs on every render, even when unrelated state updates. This causes lag, freezes, higher CPU usage, and noticeable performance issues. With useMemo removed, clicking a button unrelated to the calculation still triggers the heavy function again.
+
+
+
+# When should you use useEffect instead of handling logic inside event handlers?
+
+useEffect should be used whenever the logic is a side effect instead of a user-triggered action. Examples include fetching data on mount, subscribing to events, updating the document title, timers, and syncing external data sources. Event handlers only run when the user interacts, while useEffect runs based on component lifecycle or dependency changes.
+
+# What happens if you don’t provide a dependency array?
+
+If you leave out the dependency array, useEffect runs after every render, which can cause infinite loops, repeated fetch calls, and unnecessary performance costs. This is usually not intended unless you explicitly want the effect to run on every update.
+
+# How can improper use of useEffect cause performance issues?
+
+Improper use can lead to:
+
+- Infinite API calls
+- Effects running too often
+- Memory leaks when cleanup is missing
+- Re-render loops triggered by updating state inside useEffect without dependencies
+
+Using the dependency array correctly and cleaning up subscriptions prevents these issues.
