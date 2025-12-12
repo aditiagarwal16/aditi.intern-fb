@@ -13,3 +13,19 @@ useCallback is not helpful when:
 - The component does not pass functions to children
 - The child component is not memoized with React.memo
 - The component is simple and extra optimization adds unnecessary complexity
+
+
+
+
+
+# How does useMemo improve performance?
+
+useMemo improves performance by memoizing the result of expensive calculations so they only recompute when their dependencies change. This prevents unnecessary recalculations on every render, which is especially important when performing heavy computations or rendering large lists.
+
+# When should you avoid using useMemo?
+
+You should avoid using useMemo for simple calculations because it adds overhead. If the computation is cheap, the memoization process can actually make performance worse instead of better. useMemo should only be used when the calculation is noticeably expensive.
+
+# What happens if you remove useMemo from your implementation?
+
+Without useMemo, the expensive calculation runs on every render, even when unrelated state updates. This causes lag, freezes, higher CPU usage, and noticeable performance issues. With useMemo removed, clicking a button unrelated to the calculation still triggers the heavy function again.
