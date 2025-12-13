@@ -28,3 +28,11 @@ Selectors help extract specific pieces of state from the Redux store in a clean 
 The biggest benefit is that if the structure of the state changes later, only the selector needs to be updated — not every component. Selectors also make components simpler and more readable. They are especially useful when multiple components depend on the same piece of state or when the selected value requires computation.
 
 Using selectors also helps performance, because memoized selectors avoid recalculating values unnecessarily. Overall, selectors make Redux code more scalable, maintainable, and easier to understand.
+
+
+
+Navigation with React Router — Reflection
+
+What are the advantages of client-side routing?
+
+Client-side routing allows React to change pages without reloading the browser, which makes the app feel faster and smoother. Only the part of the UI that changes is updated, while the rest of the app stays in memory. This improves performance and creates a more native-app-like experience. It also allows better state management, smoother animations, and faster navigation compared to a full-page reload.
