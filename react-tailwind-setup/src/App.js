@@ -88,34 +88,45 @@
 
 
 
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import React from "react";
+// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-import Home from "./pages/Home";      
-import Profile from "./pages/Profile"; 
+// import Home from "./pages/Home";      
+// import Profile from "./pages/Profile"; 
+
+// function App() {
+//   return (
+//     <Router>
+//       <nav className="flex gap-6 p-4 bg-gray-100 shadow-md">
+//         <Link to="/" className="text-blue-600 hover:underline">
+//           Home
+//         </Link>
+
+//         <Link to="/profile" className="text-blue-600 hover:underline">
+//           Profile
+//         </Link>
+//       </nav>
+
+//       <div className="p-6">
+//         <Routes>
+//           <Route path="/" element={<Home />} />
+//           <Route path="/profile" element={<Profile />} />
+//         </Routes>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+import Counter from "./Counter";
 
 function App() {
   return (
-    <Router>
-      <nav className="flex gap-6 p-4 bg-gray-100 shadow-md">
-        <Link to="/" className="text-blue-600 hover:underline">
-          Home
-        </Link>
-
-        <Link to="/profile" className="text-blue-600 hover:underline">
-          Profile
-        </Link>
-      </nav>
-
-      <div className="p-6">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
-        </Routes>
-      </div>
-    </Router>
+    <div className="p-10">
+      <Counter />
+    </div>
   );
 }
 
 export default App;
-

@@ -36,3 +36,23 @@ Navigation with React Router — Reflection
 What are the advantages of client-side routing?
 
 Client-side routing allows React to change pages without reloading the browser, which makes the app feel faster and smoother. Only the part of the UI that changes is updated, while the rest of the app stays in memory. This improves performance and creates a more native-app-like experience. It also allows better state management, smoother animations, and faster navigation compared to a full-page reload.
+
+
+
+
+Introduction to Redux Toolkit — Reflection
+When should you use Redux instead of useState?
+
+Redux should be used when your app needs global shared state that multiple components rely on. Unlike useState, which only manages local state inside one component, Redux centralizes the state so different parts of the app can access and update it without prop-drilling.
+
+You should choose Redux when:
+
+State is needed in many components
+
+The app grows large and state logic becomes complex
+
+You want predictable behavior with time-travel debugging
+
+You need centralized logic instead of scattered useState hooks
+
+For simple components, useState is enough, but Redux becomes valuable as soon as the app scales or when multiple features depend on the same data.
