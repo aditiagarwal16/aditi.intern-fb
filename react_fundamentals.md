@@ -56,3 +56,21 @@ You want predictable behavior with time-travel debugging
 You need centralized logic instead of scattered useState hooks
 
 For simple components, useState is enough, but Redux becomes valuable as soon as the app scales or when multiple features depend on the same data.
+
+
+
+When working with lists in React, some common issues include:
+
+Missing keys or using incorrect keys
+React requires a key prop for list items. If the key is missing or not unique, React may rerender incorrectly or inefficiently. Using array indexes is sometimes okay, but it's not ideal if items move or get removed.
+
+Mutating the original array
+React state must be updated immutably. Directly modifying the array (e.g., using push) can cause bugs because React won't detect the change. Instead, you must create a new array using spread syntax ([...]).
+
+Not handling empty inputs
+Users can accidentally add blank items if input validation is missing.
+
+Performance issues in large lists
+Without keys or with heavy components, rendering large lists can be slow.
+
+By handling keys properly, validating input, and using immutable updates, React can efficiently and correctly render dynamic lists.

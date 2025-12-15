@@ -119,14 +119,30 @@
 
 // export default App;
 
-import Counter from "./Counter";
+// import Counter from "./Counter";
+
+// function App() {
+//   return (
+//     <div className="p-10">
+//       <Counter />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+import ListInput from "./components/ListInput";
 
 function App() {
   return (
-    <div className="p-10">
-      <Counter />
+    <div className="p-8">
+      <ListInput />
     </div>
   );
 }
 
 export default App;
+
