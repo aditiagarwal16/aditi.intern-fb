@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running Markdown lint..."
+npm run lint-md || exit 1
+
+echo "Running spell check..."
+npm run spell-check || exit 1
