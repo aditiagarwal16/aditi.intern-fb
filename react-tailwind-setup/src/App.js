@@ -152,13 +152,28 @@
 
 
 
-import Counter from "./Counter";
+// import Counter from "./Counter";
 
+
+// function App() {
+//   return (
+//     <div className="p-8">
+//       <Counter />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+import HelloWorld from "./components/HelloWorld";
 
 function App() {
   return (
     <div className="p-8">
-      <Counter />
+      <HelloWorld name="Aditi" />
     </div>
   );
 }

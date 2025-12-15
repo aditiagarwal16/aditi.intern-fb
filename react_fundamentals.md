@@ -90,3 +90,15 @@ If we modify state directly instead of using setState (or setCount in useState),
 - It can cause unexpected bugs because React's internal state management is bypassed
 
 React requires state updates to go through the state setter function so it can track changes and update the UI correctly.
+
+
+
+
+
+
+Why are components important in React?
+
+Components are the building blocks of a React application.
+They allow us to break the UI into small, reusable pieces that each handle their own logic and rendering.
+This makes the code easier to maintain, easier to test, and more scalable as the application grows.
+With props, components can be dynamic and reusable in different parts of the app.
