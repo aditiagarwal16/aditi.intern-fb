@@ -67,3 +67,13 @@ Clean, readable code is better than commented messy code.
 
 
 
+
+
+
+# How do unit tests help keep code clean?
+
+Unit tests force you to write small, predictable, and reusable functions because large or overly complicated functions are difficult to test. They catch problems early, help prevent regressions, and make refactoring safer since tests confirm everything still works as expected. This leads to cleaner and more maintainable code.
+
+# What issues did you find while testing?
+
+While testing, I realized that certain edge cases (like checking isPositive(0)) needed to be handled explicitly. Writing tests also made me confirm the expected behavior more clearly. Testing helped highlight where assumptions in the logic could cause bugs.

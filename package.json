@@ -1,7 +1,10 @@
 {
   "devDependencies": {
+    "@babel/preset-env": "^7.28.5",
+    "babel-jest": "^30.2.0",
     "cspell": "^9.4.0",
     "husky": "^9.1.7",
+    "jest": "^30.2.0",
     "markdownlint-cli": "^0.47.0"
   }
 }
