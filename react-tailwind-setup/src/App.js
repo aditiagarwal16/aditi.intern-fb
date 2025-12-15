@@ -168,12 +168,29 @@
 
 
 
-import HelloWorld from "./components/HelloWorld";
+// import HelloWorld from "./components/HelloWorld";
+
+// function App() {
+//   return (
+//     <div className="p-8">
+//       <HelloWorld name="Aditi" />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+import BuggyCounter from "./debugging/BuggyCounter";
+import FixedCounter from "./debugging/FixedCounter";
 
 function App() {
   return (
-    <div className="p-8">
-      <HelloWorld name="Aditi" />
+    <div className="p-8 space-y-10">
+      <BuggyCounter />
+      <FixedCounter />
     </div>
   );
 }
