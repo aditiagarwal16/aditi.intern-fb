@@ -134,15 +134,33 @@
 
 
 
-import ListInput from "./components/ListInput";
+// import ListInput from "./components/ListInput";
+
+// function App() {
+//   return (
+//     <div className="p-8">
+//       <ListInput />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
+
+
+
+import Counter from "./Counter";
+
 
 function App() {
   return (
     <div className="p-8">
-      <ListInput />
+      <Counter />
     </div>
   );
 }
 
 export default App;
-

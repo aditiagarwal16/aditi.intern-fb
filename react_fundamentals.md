@@ -74,3 +74,19 @@ Performance issues in large lists
 Without keys or with heavy components, rendering large lists can be slow.
 
 By handling keys properly, validating input, and using immutable updates, React can efficiently and correctly render dynamic lists.
+
+
+
+
+
+
+Reflection: What happens if we modify state directly instead of using setState?
+
+If we modify state directly instead of using setState (or setCount in useState), React will not detect the change. This means:
+
+- The component will NOT re-render
+- The UI won't update
+- State becomes unreliable and out of sync
+- It can cause unexpected bugs because React's internal state management is bypassed
+
+React requires state updates to go through the state setter function so it can track changes and update the UI correctly.
