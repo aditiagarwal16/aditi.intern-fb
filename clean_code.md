@@ -77,3 +77,13 @@ Unit tests force you to write small, predictable, and reusable functions because
 # What issues did you find while testing?
 
 While testing, I realized that certain edge cases (like checking isPositive(0)) needed to be handled explicitly. Writing tests also made me confirm the expected behavior more clearly. Testing helped highlight where assumptions in the logic could cause bugs.
+
+
+
+# What was the issue with the original code?
+
+The original divide() function assumed all inputs were always valid and did not handle invalid numbers or division by zero. This could cause runtime crashes or unexpected behavior. Without guard clauses, the function could return Infinity, NaN, or break other parts of the program.
+
+# How does handling errors improve reliability?
+
+Adding guard clauses ensures that incorrect inputs are caught early, making the code safer and more predictable. Error messages help developers understand what went wrong instead of silently failing. This leads to more robust software, fewer bugs, and easier debugging. It also prevents invalid outputs from spreading through the system.
