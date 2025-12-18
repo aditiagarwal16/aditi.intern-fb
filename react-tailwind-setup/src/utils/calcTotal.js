@@ -3,9 +3,9 @@
 export function calcTotal(prices) {
   let total = 0;
 
-  for (let i = 0; i < prices.length; i += 1) {
+  for (let i = 0; i < prices.length; i += 1) {      
     if (typeof prices[i] === 'number') {
-      const value = prices[i];
+      const value = prices[i];                      
       if (value >= 0) {
         total += value;
       } else {
