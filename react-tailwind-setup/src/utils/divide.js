@@ -22,3 +22,8 @@ export function divide(a, b) {
 
   return a / b;
 }
+
+
+
+// Add at bottom
+console.log("Cherry-pick testing");
