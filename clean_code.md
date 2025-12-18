@@ -109,3 +109,16 @@ The original functions repeated the same capitalization logic in multiple places
 # How did refactoring improve maintainability?
 
 By extracting the repeated logic into a single reusable capitalize() helper function, the code became much cleaner and easier to maintain. If formatting rules change, they now only need to be updated in one place. This improves consistency, readability, and reduces the likelihood of errors.
+
+
+
+
+
+Writing Small, Focused Functions
+# Why is breaking down functions beneficial?
+
+Breaking large functions into smaller, single-responsibility units makes the code easier to understand, test, and maintain. Each function has a clear purpose, reducing complexity and helping prevent bugs. Small functions also promote reuse and make future changes safer because logic is isolated.
+
+# How did refactoring improve the structure of the code?
+
+The original function mixed validation, total calculation, discount logic, and summary generation all in one place. After refactoring, each task was separated into helper functions such as validateOrder, calculateTotal, and applyDiscount. This made the main processOrder function much cleaner and easier to read. The code is now more modular, more testable, and easier to extend in the future.
