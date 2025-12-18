@@ -153,3 +153,72 @@ The linter identified minor style issues like unused imports, missing semicolons
 # Did formatting the code make it easier to read?
 
 Yes. After running the formatter, everything became cleaner, aligned, and more organized. It was easier to follow the code, understand logic sections, and spot potential mistakes. Overall, readability and maintainability improved a lot.
+
+
+
+
+Understanding Clean Code Principles
+🟦 Simplicity
+
+Simplicity means writing code that is easy to follow and doesn’t include unnecessary complexity. Simple code reduces confusion and makes it easier to maintain. If a problem can be solved with a straightforward approach, there’s no need to over-engineer it.
+
+🟦 Readability
+
+Readable code is code that someone else can understand quickly — even if they’ve never seen it before. Good naming, proper spacing, and clear structure make the code self-explanatory without needing extra comments.
+
+🟦 Maintainability
+
+Maintainable code can be easily updated, extended, or fixed by any developer in the future. Clean structure, small reusable functions, and consistent formatting make it easier to make changes without breaking other parts of the system.
+
+🟦 Consistency
+
+Consistency means following the same patterns, naming conventions, and style across the whole project. This prevents confusion, reduces mistakes, and makes the code feel predictable. Using tools like ESLint and Prettier helps maintain consistency automatically.
+
+🟦 Efficiency
+
+Efficient code performs well without wasting resources. Clean, optimized logic helps improve speed and performance. However, efficiency should not come at the cost of readability. Avoid premature optimization — first make it correct, then make it fast.
+
+// code before:
+
+function calc(p){let t=0;for(let i=0;i<p.length;i++){if(typeof p[i]==='number'){if(p[i]>0){t=t+p[i]}else{t=t+0}} else{if(typeof p[i]==='string'){let n=Number(p[i]);if(!isNaN(n)){if(n>0){t=t+n}}}}}return t}
+
+
+Problems with this code:
+
+- Everything is in one long line, hard to read
+- Meaningless variable names (p, t, n)
+- Too many nested conditions
+- No spacing or structure
+- Hard for anyone to understand the purpose
+
+// After
+
+export function calculateTotal(prices) {
+  let total = 0;
+
+  for (const price of prices) {
+    if (typeof price === "number" && price >= 0) {
+      total += price;
+      continue;
+    }
+
+    if (typeof price === "string") {
+      const parsed = Number(price);
+
+      if (!Number.isNaN(parsed) && parsed >= 0) {
+        total += parsed;
+      }
+    }
+  }
+
+  return total;
+}
+
+
+Improvements Made:
+
+- Clear function and variable names
+- Proper spacing and formatting
+- Removed deep nesting
+- Guard clauses for readability
+- Easier to understand logic
