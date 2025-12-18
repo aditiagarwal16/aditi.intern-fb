@@ -87,3 +87,13 @@ The original divide() function assumed all inputs were always valid and did not 
 # How does handling errors improve reliability?
 
 Adding guard clauses ensures that incorrect inputs are caught early, making the code safer and more predictable. Error messages help developers understand what went wrong instead of silently failing. This leads to more robust software, fewer bugs, and easier debugging. It also prevents invalid outputs from spreading through the system.
+
+
+Refactoring Code for Simplicity
+# What made the original code complex?
+
+The original implementation used deeply nested if statements, repeated conditions, and unnecessary variables. It handled the same logic in multiple places, which made it hard to read, extend, or debug. The flow of the function was not clear, and the intent was buried inside multiple layers of checks.
+
+# How did refactoring improve it?
+
+Refactoring simplified the logic by using array methods like map, filter, and reduce. This made the code more declarative, readable, and maintainable. The refactored version removes duplicated conditions and clearly expresses the intent of the function. The code is now shorter and easier to debug or modify without changing functionality.
