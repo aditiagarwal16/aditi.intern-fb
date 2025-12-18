@@ -122,3 +122,20 @@ Breaking large functions into smaller, single-responsibility units makes the cod
 # How did refactoring improve the structure of the code?
 
 The original function mixed validation, total calculation, discount logic, and summary generation all in one place. After refactoring, each task was separated into helper functions such as validateOrder, calculateTotal, and applyDiscount. This made the main processOrder function much cleaner and easier to read. The code is now more modular, more testable, and easier to extend in the future.
+
+
+
+
+
+Naming Variables & Functions
+# What makes a good variable or function name?
+
+A good name clearly describes the purpose of the variable or function. It should be specific, readable, and meaningful without requiring comments. Names should follow consistent conventions and avoid abbreviations or single letters unless used in simple loops.
+
+# What issues can arise from poorly named variables?
+
+Poor names make the code confusing and increase the risk of bugs. Developers may misunderstand what the variable represents, incorrectly modify it, or misuse the function. It also slows down onboarding and makes debugging much harder.
+
+# How did refactoring improve code readability?
+
+After renaming calc to calculateDoubleSum and using descriptive variable names like sum and doubledValue, the code became easier to understand at a glance. The purpose of each variable and function is now clear, reducing cognitive load and improving maintainability.
