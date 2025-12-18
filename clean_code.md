@@ -97,3 +97,15 @@ The original implementation used deeply nested if statements, repeated condition
 # How did refactoring improve it?
 
 Refactoring simplified the logic by using array methods like map, filter, and reduce. This made the code more declarative, readable, and maintainable. The refactored version removes duplicated conditions and clearly expresses the intent of the function. The code is now shorter and easier to debug or modify without changing functionality.
+
+
+
+
+Avoiding Code Duplication (DRY Principle)
+# What were the issues with duplicated code?
+
+The original functions repeated the same capitalization logic in multiple places. This duplicated code increases the risk of inconsistencies and bugs because any future change would need to be updated in several locations. It also made the functions longer and harder to read.
+
+# How did refactoring improve maintainability?
+
+By extracting the repeated logic into a single reusable capitalize() helper function, the code became much cleaner and easier to maintain. If formatting rules change, they now only need to be updated in one place. This improves consistency, readability, and reduces the likelihood of errors.
