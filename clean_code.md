@@ -139,3 +139,17 @@ Poor names make the code confusing and increase the risk of bugs. Developers may
 # How did refactoring improve code readability?
 
 After renaming calc to calculateDoubleSum and using descriptive variable names like sum and doubledValue, the code became easier to understand at a glance. The purpose of each variable and function is now clear, reducing cognitive load and improving maintainability.
+
+
+
+# Why is code formatting important?
+
+Consistent formatting makes the code easier to read and understand, especially when working in teams. It helps avoid confusion, prevents style-related bugs, and keeps the codebase clean and professional.
+
+# What issues did the linter detect?
+
+The linter identified minor style issues like unused imports, missing semicolons, inconsistent spacing, and formatting differences. These weren't breaking errors but helped clean up the code structure.
+
+# Did formatting the code make it easier to read?
+
+Yes. After running the formatter, everything became cleaner, aligned, and more organized. It was easier to follow the code, understand logic sections, and spot potential mistakes. Overall, readability and maintainability improved a lot.
