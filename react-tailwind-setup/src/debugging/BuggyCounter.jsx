@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function BuggyCounter() {
   const [count, setCount] = useState(0);

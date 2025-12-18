@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function FixedCounter() {
   const [count, setCount] = useState(0);
 
   function incrementFiveTimes() {
     for (let i = 0; i < 5; i++) {
-      setCount(prev => prev + 1); // ✅ Correct: uses functional update
+      setCount((prev) => prev + 1); // ✅ Correct: uses functional update
     }
   }
 

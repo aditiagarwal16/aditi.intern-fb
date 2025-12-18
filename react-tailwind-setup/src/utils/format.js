@@ -1,8 +1,8 @@
+/* eslint-disable no-redeclare */
 // before
 
-
 export function formatUserName(firstName, lastName) {
-  if (!firstName || !lastName) return "Unknown User";
+  if (!firstName || !lastName) return 'Unknown User';
 
   const first = firstName.trim();
   const last = lastName.trim();
@@ -17,7 +17,7 @@ export function formatUserName(firstName, lastName) {
 }
 
 export function formatCityName(city) {
-  if (!city) return "Unknown City";
+  if (!city) return 'Unknown City';
 
   const c = city.trim();
 
@@ -27,44 +27,34 @@ export function formatCityName(city) {
   return formattedCity;
 }
 
-
-
 // What is duplicated?
 
-// The capitalization logic:   
+// The capitalization logic:
 
 value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
 
 // This appears in two different functions, which breaks DRY principles.
 
+// After
 
+// function capitalize(value) {
+//   return value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
+// }
 
+// export function formatUserName(firstName, lastName) {
+//   if (!firstName || !lastName) return 'Unknown User';
 
+//   const first = capitalize(firstName.trim());
+//   const last = capitalize(lastName.trim());
 
+//   return `${first} ${last}`;
+// }
 
+// export function formatCityName(city) {
+//   if (!city) return 'Unknown City';
 
-//After
-
-function capitalize(value) {
-  return value.charAt(0).toUpperCase() + value.slice(1).toLowerCase();
-}
-
-export function formatUserName(firstName, lastName) {
-  if (!firstName || !lastName) return "Unknown User";
-
-  const first = capitalize(firstName.trim());
-  const last = capitalize(lastName.trim());
-
-  return `${first} ${last}`;
-}
-
-export function formatCityName(city) {
-  if (!city) return "Unknown City";
-
-  return capitalize(city.trim());
-}
-
-
+//   return capitalize(city.trim());
+// }
 
 // Refactoring benefits:
 
@@ -73,5 +63,3 @@ export function formatCityName(city) {
 // Code is cleaner and easier to change
 
 // Lower chance of bugs when updating formatting rules later
-
-

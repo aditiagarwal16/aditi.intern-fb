@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 function ListInput() {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState('');
   const [items, setItems] = useState([]);
 
   const handleAdd = () => {
-    if (inputValue.trim() === "") return;
+    if (inputValue.trim() === '') return;
 
     setItems([...items, inputValue]);
-    setInputValue("");
+    setInputValue('');
   };
 
   return (

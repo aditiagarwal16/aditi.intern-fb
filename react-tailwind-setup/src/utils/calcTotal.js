@@ -1,22 +1,21 @@
+/* eslint-disable no-redeclare */
 // Before
-
-
 export function calcTotal(prices) {
   let total = 0;
 
-  for (let i = 0; i < prices.length; i++) {
-    if (typeof prices[i] === "number") {
-      let value = prices[i];
+  for (let i = 0; i < prices.length; i += 1) {
+    if (typeof prices[i] === 'number') {
+      const value = prices[i];
       if (value >= 0) {
-        total = total + value;
+        total += value;
       } else {
-        total = total + 0;
+        total += 0;
       }
-    } else if (typeof prices[i] === "string") {
+    } else if (typeof prices[i] === 'string') {
       const parsed = Number(prices[i]);
-      if (!isNaN(parsed)) {
+      if (!Number.isNaN(num)(parsed)) {
         if (parsed >= 0) {
-          total = total + parsed;
+          total += parsed;
         }
       }
     } else {
@@ -26,7 +25,6 @@ export function calcTotal(prices) {
 
   return total;
 }
-
 
 // Why this is bad:
 
@@ -40,18 +38,14 @@ export function calcTotal(prices) {
 
 // violates clean code principles
 
-
-
 // After
 
-
-export function calcTotal(prices) {
-  return prices
-    .map((item) => Number(item))
-    .filter((num) => !isNaN(num) && num >= 0)
-    .reduce((sum, num) => sum + num, 0);
-}
-
+// export function calcTotal(prices) {
+//   return prices
+//     .map((item) => Number(item))
+//     .filter((num) => !isNaN(num) && num >= 0)
+//     .reduce((sum, num) => sum + num, 0);
+// }
 
 // Why this is better:
 

@@ -1,15 +1,14 @@
 // unclear variable/function names
 
 export function calc(x, y) {
-  let a = x + y;
-  let b = a * 2;
+  const a = x + y;
+  const b = a * 2;
   return b;
 }
 
 export function fn(arr) {
   return arr.map((i) => i * 3);
 }
-
 
 // Why this is BAD:
 
@@ -20,7 +19,6 @@ export function fn(arr) {
 // fn → meaningless
 
 // i → not expressive
-
 
 // REFACTORED version
 
@@ -33,7 +31,6 @@ export function calculateDoubleSum(firstNumber, secondNumber) {
 export function tripleValues(numbers) {
   return numbers.map((number) => number * 3);
 }
-
 
 // Why this is GOOD:
 

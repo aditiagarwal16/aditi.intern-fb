@@ -10,7 +10,6 @@
 
 // export default App;
 
-
 // import React from "react";
 // import Message from "./components/Message";
 
@@ -24,10 +23,6 @@
 
 // export default App;
 
-
-
-
-
 // import React from "react";
 // import UseCallbackDemo from "./UseCallbackDemo";
 
@@ -36,8 +31,6 @@
 // }
 
 // export default App;
-
-
 
 // import FormikForm from "./components/FormikForm";
 
@@ -51,13 +44,6 @@
 
 // export default App;
 
-
-
-
-
-
-
-
 // import UseMemoDemo from "./components/UseMemoDemo";
 
 // function App() {
@@ -69,8 +55,6 @@
 // }
 
 // export default App;
-
-
 
 // import UseEffectDemo from "./components/UseEffectDemo";
 
@@ -84,15 +68,11 @@
 
 // export default App;
 
-
-
-
-
 // import React from "react";
 // import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-// import Home from "./pages/Home";      
-// import Profile from "./pages/Profile"; 
+// import Home from "./pages/Home";
+// import Profile from "./pages/Profile";
 
 // function App() {
 //   return (
@@ -131,9 +111,6 @@
 
 // export default App;
 
-
-
-
 // import ListInput from "./components/ListInput";
 
 // function App() {
@@ -146,14 +123,7 @@
 
 // export default App;
 
-
-
-
-
-
-
 // import Counter from "./Counter";
-
 
 // function App() {
 //   return (
@@ -164,9 +134,6 @@
 // }
 
 // export default App;
-
-
-
 
 // import HelloWorld from "./components/HelloWorld";
 
@@ -180,11 +147,8 @@
 
 // export default App;
 
-
-
-
-import BuggyCounter from "./debugging/BuggyCounter";
-import FixedCounter from "./debugging/FixedCounter";
+import BuggyCounter from './debugging/BuggyCounter';
+import FixedCounter from './debugging/FixedCounter';
 
 function App() {
   return (

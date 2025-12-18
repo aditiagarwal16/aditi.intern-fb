@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
 function Child({ onClick }) {
-  console.log("Child component rendered");
+  console.log('Child component rendered');
 
   return (
     <button

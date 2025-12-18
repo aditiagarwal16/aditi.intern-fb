@@ -1,27 +1,27 @@
-import { useFormik } from "formik";
-import * as Yup from "yup";
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 
 function FormikForm() {
   // Formik setup
   const formik = useFormik({
     initialValues: {
-      name: "",
-      email: "",
+      name: '',
+      email: '',
     },
 
     validationSchema: Yup.object({
       name: Yup.string()
-        .min(2, "Name is too short")
-        .required("Name is required"),
+        .min(2, 'Name is too short')
+        .required('Name is required'),
 
       email: Yup.string()
-        .email("Invalid email format")
-        .required("Email is required"),
+        .email('Invalid email format')
+        .required('Email is required'),
     }),
 
     onSubmit: (values) => {
-      console.log("Form Submitted:", values);
-      alert("Form submitted successfully!");
+      console.log('Form Submitted:', values);
+      alert('Form submitted successfully!');
     },
   });
 

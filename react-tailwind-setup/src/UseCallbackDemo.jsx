@@ -1,5 +1,5 @@
-import React, { useState, useCallback } from "react";
-import Child from "./components/Child";
+import React, { useState, useCallback } from 'react';
+import Child from './components/Child';
 
 function UseCallbackDemo() {
   const [count, setCount] = useState(0);
@@ -8,7 +8,7 @@ function UseCallbackDemo() {
   // Without useCallback → function recreates every render
   // With useCallback → reference stays the same unless "count" changes
   const handleIncrement = useCallback(() => {
-    console.log("Increment function called");
+    console.log('Increment function called');
     setCount((prev) => prev + 1);
   }, []);
 

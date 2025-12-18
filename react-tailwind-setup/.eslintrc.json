@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb",
+    "airbnb/hooks",
+    "prettier"
+  ],
+  "plugins": ["react", "react-hooks", "import", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-undef": "off",
+    "no-unused-expressions": "off",
+    "no-param-reassign": "off",
+    "import/prefer-default-export": "off",
+    "react/button-has-type": "off"
+}
+
+}

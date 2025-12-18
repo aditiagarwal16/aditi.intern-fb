@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 function UseEffectDemo() {
   const [data, setData] = useState(null);
@@ -6,22 +6,24 @@ function UseEffectDemo() {
 
   // 🔹 Logs when component mounts + cleanup on unmount
   useEffect(() => {
-    console.log("🟢 Component mounted");
+    console.log('🟢 Component mounted');
 
     return () => {
-      console.log("🔴 Component unmounted (cleanup ran)");
+      console.log('🔴 Component unmounted (cleanup ran)');
     };
   }, []);
 
   // 🔹 Fetch data when button is clicked
   const fetchData = async () => {
     try {
-      const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+      const response = await fetch(
+        'https://jsonplaceholder.typicode.com/todos/1',
+      );
       const json = await response.json();
       setData(json);
-      console.log("📥 Data fetched:", json);
+      console.log('📥 Data fetched:', json);
     } catch (error) {
-      console.error("❌ Error fetching data:", error);
+      console.error('❌ Error fetching data:', error);
     }
   };
 
@@ -52,7 +54,7 @@ function UseEffectDemo() {
         onClick={() => setShow(!show)}
         className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
       >
-        {show ? "Unmount Component" : "Mount Component"}
+        {show ? 'Unmount Component' : 'Mount Component'}
       </button>
     </div>
   );

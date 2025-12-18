@@ -1,8 +1,7 @@
-import React from "react";
+import React from 'react';
 
-function Button({ children, onClick, variant = "primary" }) {
-  const base =
-    "px-4 py-2 rounded-md font-medium transition active:scale-95";
+function Button({ children, onClick, variant = 'primary' }) {
+  const base = 'px-4 py-2 rounded-md font-medium transition active:scale-95';
 
   const styles = {
     primary: `${base} bg-blue-600 text-white hover:bg-blue-700`,

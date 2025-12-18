@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo } from 'react';
 
 function UseMemoDemo() {
   const [number, setNumber] = useState(1);
@@ -6,7 +6,7 @@ function UseMemoDemo() {
 
   // ❗ Expensive calculation (simulated with a large loop)
   const expensiveResult = useMemo(() => {
-    console.log("Running expensive calculation...");
+    console.log('Running expensive calculation...');
     let total = 0;
     for (let i = 0; i < 500000000; i++) {
       total += number;

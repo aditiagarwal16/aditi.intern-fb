@@ -1,12 +1,6 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": [
-    "useEffect",
-    "useCallback",
-    "Formik",
-    "i18next",
-    "redux"
-  ],
+  "words": ["useEffect", "useCallback", "Formik", "i18next", "redux"],
   "ignorePaths": ["node_modules"]
 }
