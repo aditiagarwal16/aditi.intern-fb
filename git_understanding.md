@@ -108,3 +108,17 @@ Shows who last modified each line in a file, along with the exact commit hash an
 
 It was very detailed — it even shows old commits and authors line by line. It’s like a forensic tool for code history.
 
+
+
+
+
+Reflection: Creating & Reviewing Pull Requests
+
+# Why are PRs important in a team workflow?
+Pull Requests are essential because they allow developers to review code before it is merged into the main branch. This prevents bugs, improves code quality, and ensures that multiple people agree on the changes. PRs also act as documentation for why a change happened.
+
+# What makes a well-structured PR?
+A good PR has a clear title, a detailed description, and a logical list of changes. It should be small, focused on one task, and easy to understand. Including screenshots, testing notes, and linking related issues helps reviewers understand the context quickly.
+
+# What did you learn from reviewing an open-source PR?
+Reviewing a React open-source PR showed how professional teams collaborate. The discussions were highly detailed—reviewers asked for exact changes, improvements, and explanations. I learned that even small changes go through strict review standards, and communication is respectful, precise, and technical. This shows how important review culture is in large-scale projects.
