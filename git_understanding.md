@@ -122,3 +122,36 @@ A good PR has a clear title, a detailed description, and a logical list of chang
 
 # What did you learn from reviewing an open-source PR?
 Reviewing a React open-source PR showed how professional teams collaborate. The discussions were highly detailed—reviewers asked for exact changes, improvements, and explanations. I learned that even small changes go through strict review standards, and communication is respectful, precise, and technical. This shows how important review culture is in large-scale projects.
+
+
+
+
+# Git Concepts: Staging vs. Committing
+
+## What is the difference between staging and committing?
+
+Staging and committing are two separate steps in Git that control how changes are saved.  
+**Staging** means selecting specific changes and adding them to the staging area using `git add`. These changes are prepared but not permanently saved yet.  
+**Committing** means saving the staged changes to the repository’s history using `git commit`. Once committed, the changes become part of the project timeline with a commit message.
+
+In simple terms, staging is like choosing what to include, and committing is like finalising and saving those choices.
+
+## Why does Git separate these two steps?
+
+Git separates staging and committing to give developers more control over what gets saved. This allows you to review and organise your changes before committing them. Instead of committing everything at once, you can stage only the relevant parts of your work, which helps keep commits clean, meaningful, and easier to understand later.
+
+This separation is especially useful when working on multiple changes at the same time or collaborating with others.
+
+## When would you want to stage changes without committing?
+
+You might want to stage changes without committing when:
+- You are still working on part of a feature and are not ready to commit yet.
+- You want to commit only specific files or changes and leave others for later.
+- You want to double-check staged changes using `git status` before committing.
+- You are experimenting or testing and don’t want to permanently save changes yet.
+
+During this task, I staged a file, checked its status, unstaged it, and then committed it to clearly see how each step affects the Git workflow.
+
+## Conclusion
+
+Staging and committing are separate steps that make Git flexible and powerful. Staging allows developers to carefully prepare changes, while committing permanently records them. Understanding this distinction helps maintain a clean commit history and better version control practices.
