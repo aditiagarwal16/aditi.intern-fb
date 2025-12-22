@@ -122,3 +122,26 @@ A good PR has a clear title, a detailed description, and a logical list of chang
 
 # What did you learn from reviewing an open-source PR?
 Reviewing a React open-source PR showed how professional teams collaborate. The discussions were highly detailed—reviewers asked for exact changes, improvements, and explanations. I learned that even small changes go through strict review standards, and communication is respectful, precise, and technical. This shows how important review culture is in large-scale projects.
+
+
+
+
+
+
+## Branching & Team Collaboration
+
+### Why is pushing directly to `main` problematic?
+
+Pushing directly to the `main` branch is risky because it can introduce bugs or incomplete features into the stable version of the project. In a team environment, `main` usually represents production-ready or working code. If everyone pushes directly to it, mistakes can break the project for the whole team and make it difficult to track where issues came from.
+
+### How do branches help with reviewing code?
+
+Branches allow developers to work on features or fixes in isolation without affecting the main codebase. Changes made in a branch can be reviewed through pull requests before being merged into `main`. This makes it easier for teammates to review code, suggest improvements, catch bugs, and ensure coding standards are followed. Branching also encourages better collaboration and communication within the team.
+
+### What happens if two people edit the same file on different branches?
+
+If two people edit the same file on different branches, Git keeps the changes separate until they are merged. When merging, Git may automatically combine the changes if they do not conflict. However, if both people edit the same lines of code, a merge conflict occurs. The conflict must be resolved manually by deciding which changes to keep before the merge can be completed.
+
+### Reflection
+
+This experiment showed how branching helps keep the `main` branch stable while allowing multiple people to work in parallel. It also highlighted why structured workflows using branches and reviews are essential for teamwork and avoiding errors in shared codebases.
