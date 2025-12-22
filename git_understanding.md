@@ -145,3 +145,7 @@ If two people edit the same file on different branches, Git keeps the changes se
 ### Reflection
 
 This experiment showed how branching helps keep the `main` branch stable while allowing multiple people to work in parallel. It also highlighted why structured workflows using branches and reviews are essential for teamwork and avoiding errors in shared codebases.
+
+
+
+This line was added from the main branch.
