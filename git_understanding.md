@@ -148,4 +148,16 @@ This experiment showed how branching helps keep the `main` branch stable while a
 
 
 
-This line was added from the main branch.
+## Merge Conflicts & Conflict Resolution
+
+### What caused the conflict?
+
+The merge conflict occurred because the same file was edited in two different branches (`main` and `conflict-test`) in the same section. Git was unable to automatically decide which change should be kept, resulting in a conflict during the merge process.
+
+### How did you resolve it?
+
+I resolved the conflict by opening the affected file and reviewing the conflict markers added by Git. I manually decided which changes to keep, removed the conflict markers, and saved the corrected version of the file. After resolving the conflict, I staged the file and committed the merge resolution.
+
+### What did you learn?
+
+This exercise helped me understand how merge conflicts occur and how Git handles them. I learned that conflicts are not errors but situations that require human decision-making. Resolving conflicts carefully is important to ensure no work is lost and that the final code reflects the intended changes from all contributors.
